@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var codproduto;
+        var quantos = 0;
+        var preco = 0;
+        var precototal = 0;
+        var hotdog = 0;
+        var bauru = 0;
+        var bauruovo = 0;
+        var burger = 0;
+        var xburger= 0;
+        var refri = 0;
+
+        function pulalinha(){
+            document.write("<br>");
+        }
+
+        while (codproduto != 0){
+            codproduto = prompt("Digite o código do produto para adicionar ao carrinho: \n 100  Cachorro quente  R$  8,70 \n 101  Bauru Simples    R$ 12,30 \n 102  Bauru com ovo    R$ 15,60 \n 103  Hambúrguer       R$ 12,40 \n 104  Cheeseburguer    R$ 15,50 \n 105  Refrigerante     R$  6,00 \n Ou '0' para finalizar o pedido.");
+
+            if (codproduto == 100){
+                quantos = parseFloat(prompt("Informe a quantidade que gostaria de adicionar"));
+                //document.write(quantos);
+                hotdog = parseFloat( hotdog + quantos );
+                preco = parseFloat(8.7);
+                precototal = parseFloat(precototal + (preco * quantos));
+
+                
+                alert("Total parcial: " + precototal);
+                alert("Quantidade de CachorroQuente :" + hotdog);
+            }
+
+            if (codproduto == 101){
+                quantos = parseFloat(prompt("Informe a quantidade que gostaria de adicionar"));
+                //document.write(quantos);
+                bauru = parseFloat( bauru + quantos );
+                preco = parseFloat(12.3);
+                precototal = parseFloat(precototal + (preco * quantos));
+
+                alert("Total parcial: " + precototal);
+                alert("Quantidade de CachorroQuente :" + bauru);
+            }
+
+            if (codproduto == 102){
+                quantos = parseFloat(prompt("Informe a quantidade que gostaria de adicionar"));
+                //document.write(quantos);
+                bauruovo = parseFloat( bauruovo + quantos );
+                preco = parseFloat(15.6);
+                precototal = parseFloat(precototal + (preco * quantos));
+
+                alert("Total parcial: " + precototal);
+                alert("Quantidade de CachorroQuente :" + bauruovo);
+            }
+
+            if (codproduto == 103){
+                quantos = parseFloat(prompt("Informe a quantidade que gostaria de adicionar"));
+                //document.write(quantos);
+                burger = parseFloat( burger + quantos );
+                preco = parseFloat(12.4);
+                precototal = parseFloat(precototal + (preco * quantos));
+
+                alert("Total parcial: " + precototal);
+                alert("Quantidade de CachorroQuente :" + burger);
+            }
+
+            if (codproduto == 104){
+                quantos = parseFloat(prompt("Informe a quantidade que gostaria de adicionar"));
+                //document.write(quantos);
+                xburger = parseFloat( xburger + quantos );
+                preco = parseFloat(15.5);
+                precototal = parseFloat(precototal + (preco * quantos));
+
+                alert("Total parcial: " + precototal);
+                alert("Quantidade de CachorroQuente :" + xburger);
+            }
+
+            if (codproduto == 105){
+                quantos = parseFloat(prompt("Informe a quantidade que gostaria de adicionar"));
+                //document.write(quantos);
+                refri = parseFloat( refri + quantos );
+                preco = parseFloat(6);
+                precototal = parseFloat(precototal + (preco * quantos));
+
+                alert("Total parcial: " + precototal);
+                alert("Quantidade de CachorroQuente :" + refri);
+            }
+
+        }
+
+                
+        pulalinha();
+        document.write("O valor total do pedido é: ", precototal.toFixed(2));
+        pulalinha();
+        document.write("Cachorro Quente: ", hotdog);
+        pulalinha();
+        document.write("Bauru Simples: ", bauru);
+        pulalinha();
+        document.write("Bauru com Ovo: ", bauruovo);
+        pulalinha();
+        document.write("Hambúrguer: ", burger);
+        pulalinha();
+        document.write("Cheeseburguer: ", xburger);
+        pulalinha();
+        document.write("Refrigerante: ", refri);
+        pulalinha();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

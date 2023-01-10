@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* ISSO auqi é um comentário no CSS */
+
+article { background-color: white; }
+
+aside { background-color: rgb(185, 8, 8); }
+
+nav { background-color: chocolate; }
+
+section { background-color: bisque }
+
+/* Esse CSS aqui embaixo está atuando na tabela */
+
+table { background-color: red; }
+
+table, tr, td {
+    border: solid 2px white;
+    padding: 3px;
+    color: white;
+}

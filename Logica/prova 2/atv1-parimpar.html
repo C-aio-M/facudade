@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var numero = 0;
+        var contador = 0;
+        var par = 0;
+        var impar = 0;
+        var resto = 0;
+
+        function pulalinha(){
+            document.write("<br>");
+        }
+
+        for (contador = 1; contador <= 10; contador++){
+            numero = prompt("Digite um múmero qualquer.");
+
+            resto = numero % 2;
+
+            if (resto == 0){
+                par++;
+                document.write("Esse número é par: ", numero);
+                pulalinha();
+            } else{
+                impar++;
+                document.write("Esse número é ímpar: ", numero)
+                pulalinha();
+            }
+        }
+
+
+        document.write(par, " números são pares.");
+        pulalinha();
+        document.write(impar, " números são ímpares.");
+        pulalinha();
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function pula (){
+            document.write("<br>");
+        }
+
+        var idade;
+        var sexo;
+        var salario = 0;
+        var contM = 0;
+        var menorS;
+        var geral = 0;
+        var velho;
+        var jovem;
+        var pib = 0;
+        var mediaS = 0;
+        var pobreidade = 0;
+        var pobresalario;
+        var probresexo;
+
+        while(idade =! 0){
+            idade = prompt("digite a idade");
+            if(idade == 0){
+                    pula();
+                    document.write("fim da pesquisa");
+            }
+            else{
+
+                sexo = prompt("digite o sexo");
+                salario = prompt("digite o salário");
+            
+                geral++;
+
+                if (sexo == "F" || sexo == "f"){
+                    contM++;
+                }
+
+                pib = pib + salario;
+                if(velho < idade){
+                    velho = idade;
+                }
+                if(jovem > idade){
+                    jovem = idade;
+                }
+                if(menorS > salario){
+                    menorS = salario;
+                    pobreidade = idade;
+                    pobresalario = salario;
+
+                }
+            }
+        }
+
+        mediaS = pib / geral;
+
+        document.write("media salarial é: ", mediaS);
+        pula();
+        document.write("maior idade: ", velho, "<br> e menor idade é: ", jovem);
+        pula();
+        document.write("quantidade de mulheres: ", contM);
+        pula();
+        document.write("dados da pessoa com menor salário. sexo: ", probresexo, "<br> idade: ", pobreidade, "<br> menor salario: ", menorS);
+        pula();
+        document.write("geral ", geral);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

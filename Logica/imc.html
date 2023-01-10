@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+
+    <script>
+        var peso= parseFloat(prompt("digite seu  peso"));        
+
+        var altura= parseFloat(prompt("digite sua altura \n Não é necessário utilizar . ou ,"));
+
+        var resultado = (peso*100) / (altura * 2);
+
+        if(resultado.toFixed(3) < 16){
+            document.write(resultado.toFixed(3), " Baixo peso muito grave");
+        }
+        else if(resultado.toFixed(3) >= 16 && resultado.toFixed(3) < 16.99){
+            document.write(resultado.toFixed(3), " Baixo peso grave");
+        }
+        else if(resultado.toFixed(3) >= 17 && resultado.toFixed(3) < 18.49){
+            document.write(resultado.toFixed(3), " Baixo peso");
+        }
+        else if(resultado.toFixed(3) >= 18.50 && resultado.toFixed(3) < 24.99){
+            document.write(resultado.toFixed(3), " Peso normal");
+        }
+        else if(resultado.toFixed(3) >= 25 && resultado.toFixed(3) < 29.99){
+            document.write(resultado.toFixed(3), " Sobrepeso")
+        }
+        else if(resultado.toFixed(3) >= 30 && resultado.toFixed(3) < 34.99){
+            document.write(resultado.toFixed(3), " Obesidade grau I");
+        }
+        else if(resultado.toFixed(3) >= 35 && resultado.toFixed(3) < 39.99){
+            document.write(resultado.toFixed(3), " Obesidade grau II");
+        }
+        else if(resultado.toFixed(3) >= 40){
+            document.write(resultado.toFixed(3), " Obesidade grau III");
+        }
+        else{
+            document.write("Valor Inválido");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

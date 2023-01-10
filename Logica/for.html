@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>for</title>
+
+    <script>
+        var total = 0; 
+        var parcial = 0; 
+        var media = 0;
+
+        for (var x = 1; x <= 3; x++){
+            parcial = parseFloat(prompt("digite a " + x +"° do aluno"));
+            total += parcial;
+            document.write(parcial + " " + total + "<br>");
+
+        }
+
+        media = total /3;
+        document.write("<br>" );
+        document.write(media);
+
+        if(media >= 6){
+            document.write("<br>" + "aprovado")
+        }
+
+        else if(media < 6){
+            document.write("<br>" + "reprovado")
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

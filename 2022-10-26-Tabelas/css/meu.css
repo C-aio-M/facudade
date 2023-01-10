@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* Isso é um comentário no CSS */
+/* CSS "Cascade Style Sheet" ou "Folha de Estilo em Cascata" */
+/* Quando uma mesma propriedadse é definida mais de uma vez, a última prevalece reescrevendo a anteriormente declarada */
+
+/* essa declaração abaixo, pinta o BODY de preto */
+body { background-color: black; }
+
+/* agora vamos testar a CASCATA do CSS */
+/* primeiro o CSS pintou o BODY de preto, agora pntou de amarelo, a segunda definição, ou seja a mais "profunda" na cascata prevaleceu */
+body { background-color: red; }
+
+h1 { font-size: 50px; }
+h2 { font-size: 25px; }
+h3 { font-size: 15px; }
+
+h1 { text-transform: uppercase; }
+h2 { text-transform: capitalize; }
+
+header, nav, aside, article, section, footer {
+    border: dashed 2px blue;
+    background-color: lightpink;
+}
+
+article { background-color: aquamarine; }
+
+/* pequena declaração para deixar o menu horizontal */
+li { display: inline; }
+
+
+
+
+
+
+

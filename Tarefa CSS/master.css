@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/* Aula de BoxModel */
+
+/* Seletor simples */
+h1 { color: darkgreen; }
+
+/* seletor encadeado, ou seja, a propriedade é aplicada no último elemento encadeado. */
+/*uma das formas mais recorrentes de se fazer um MENU de navegação */
+
+nav ul li { display:inline; }
+
+nav ul li a {
+    /* topo, direita, base, esquerda */ 
+    padding: 0px 15px 0px 15px;
+    /* color é a cor da fonte */
+    color: darkblue;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+
+/* PSEUDO SELETORES */
+
+ul li a:hover{
+    color: white;
+    background-color: darkblue;
+}
+
+img {
+    float: left;
+    width: 15%;
+  /* A maneira correta de se utilizar imagens no HTML é colocando as imagens já com o tamanho final de exibição, ou seja, você deve redimensionar a imagem em um programa gráfico como o GIMP ou o Photoshop. Nunca devemos "alterar" o tamanho da imagem no HTML nem no CSS, pois com isso estamos carregando imagens muito maiores e muito mais pesadas do que o necessário sem, contudo, utilizar essa informação extra. Só estamos fazendo isso aqui para não abrirmos um programa gráfico a mais no Windows, que é meio tosco, e arriscar de travar a bagaça toda durante a aula. Você NÃO deve fazer isso. Nós já tivemos essa aula. */
+}
+
+/* seletor agrupado */
+/* essa definição abaixo foi feita só para dar o exemplo durante a aula, destacando o fluxo nautral do documento com uma borda pontilhada em cada box */
+/* header, nav, article, aside, footer {
+  border: 5px dotted blue;
+} */
+
+/* seletor simples */
+html {background-color: red;}
+html {background-color: lightgray;}
+
+/* seletor simples com mais de uma propriedade */
+body {
+    background-color: white;
+    font-size-adjust: 100%;
+  }
+
+/* seletor agrupado */
+header, nav, article, aside, footer {
+    background-color: lightblue;
+    background-color: palevioletred;
+    margin: 20px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    text-align: justify;
+    padding: 15px;
+  }
+
+
+.nomediscreto {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: .8em;
+    color: darkgray;
+  }
+
+.nomediscreto:hover {
+    color: red;
+  }
+
+/* Ajustar o posicionamento */
+
+body {
+    width: 980px;
+    /* Zera o espaço no topo e base (0px) e "auto" para esquerda e direita. Essa linha de CSS faz o Body ser alinhado no meio da tela, seja qual for seu tamanho. */
+    /* top, right, bottom, left */
+    margin: 0px auto 0px auto;
+  }
+
+article {
+    width: 570px;
+    margin-top: 0px;
+    float: left;
+}
+
+aside {
+    width: 330px;
+    margin-top: 0px;
+    float: left;
+}
+
+article {
+
+    background-color: lavenderblush;
+}
+
+aside {
+    background-color: aquamarine;
+}
+
+aside:hover {
+    background-color: lightsteelblue;
+}
+
+footer {
+    background-color: lightsteelblue;
+    clear: both;
+}

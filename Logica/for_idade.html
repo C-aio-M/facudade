@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>for_idade</title>
+    <script>
+        var idade = 0;
+        var maior = 0;
+        var menor = 0;
+
+        idadeNum = parseFloat(prompt("digite quantas idades vamos verificar"));
+
+        for (var x = 1; x <= idadeNum; x++) {
+            idade = parseInt(prompt("digite"));
+
+            if (idade < 18){
+                menor++;
+                document.write("<br>" + idade);
+            }
+            else{
+                maior++;
+                document.write("<br>" + idade);
+            }
+
+        }
+
+        document.write("<br>" + maior + "tem mais de 18");
+        document.write("<br>" + menor + "tem menos de 18");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

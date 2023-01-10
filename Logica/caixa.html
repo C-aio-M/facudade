@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        var x = 0;
+        var saldo = 0;
+        var deposito = 0;
+        var saque = 0;
+
+        while(x != 4){
+            x = parseFloat(prompt("Digite o que você deseja fazer. 1- Depósito. 2- Saque. 3- Saldo. 4-Sair"));
+            if(x == 1){
+                deposito = parseFloat(prompt("digite o valor depositado"));
+                saldo = saldo + deposito;
+                document.write("deposito:", deposito, "<br>");
+                document.write("saldo: ", saldo, "<br>");
+            }
+            else if(x == 2){
+                saque = parseFloat(prompt("digite o valor que será sacado"));
+                    if(saque > saldo){
+                        document.write("pobre, vc não tem tudo isso")
+                    }
+                    else{
+                        saldo = saldo - saque;    
+                        document.write("saque: ", saque, "<br>");
+                        document.write("saldo: ", saldo, "<br>");    
+                    }
+            }
+            else if(x == 3){
+                document.white("saldo atual: ", saldo, "<br>");
+            }
+        }
+        document.write("Operação finalizada");
+
+        
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

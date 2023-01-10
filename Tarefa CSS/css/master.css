@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+h1 { color: rgb(100, 0, 0); }
+
+nav ul li { display:inline; }
+
+nav ul li a {
+    padding: 0px 15px 0px 15px;
+    /*NÃO ESQUECER, é a sua cara esquecer isso, Caio, color é a cor da fonte */
+    color: rgb(118, 203, 230);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin-top: 15px;
+  }
+
+header img {
+    width: 75%;
+    margin-left: 105px;
+    border-radius: 15px;
+}
+
+header:hover{
+  background-color: aquamarine;
+}
+
+article img {
+    float: left;
+    width: 15%;
+    margin: 15px;
+}
+
+html {background-color: rgb(0, 24, 163);}
+
+nav ul li :hover{
+  background-color: aquamarine;
+  color: black;
+}
+body {
+    background-color: rgb(31, 5, 56);
+    font-size-adjust: 100%;
+  }
+
+header, nav, article, aside, footer {
+    background-color: rgb(52, 0, 148);
+    margin: 20px;
+}
+
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    text-align: justify;
+    padding: 15px;
+  }
+
+
+.nomediscreto {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: .8em;
+    color: rgb(0, 6, 56);
+    margin-left: 15px;
+  }
+
+.nomediscreto:hover {
+    color: rgb(255, 136, 0);
+  }
+
+
+body {
+    width: 980px;
+    margin: 0px auto 0px auto;
+  }
+
+article {
+    width: 570px;
+    margin-top: 0px;
+    float: left;
+}
+
+aside {
+    width: 330px;
+    margin-top: 0px;
+    float: left;
+}
+
+article {
+    background-color: lavenderblush;
+}
+
+h1:hover{
+  color: blue;
+}
+
+aside {
+    background-color: rgb(213, 219, 177);
+}
+
+aside:hover {
+    background-color: rgb(11, 163, 168);
+}
+
+h3{
+  margin-left: 15px;
+}
+footer {
+    background-color: rgb(165, 150, 190);
+    clear: both;
+}
+
+ul, li {
+  margin-top: 15px;
+}
+
+body, header, nav, footer{
+  border: groove lightseagreen 5px;
+}

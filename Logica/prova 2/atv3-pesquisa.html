@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function pulalinha(){
+            document.write("<br>");
+        }
+
+        var idade;
+        var sexo;
+        var salario = 0;
+        var contMulher = 0;
+        var galera = 0;
+        var pobre = 0;
+        var velho = 0;
+        var nenem = 0;
+        var pib = 0;
+        var mediasal = 0;
+        var pobreidade;
+        var pobresexo;
+
+
+
+        while (idade != 0){
+            idade = prompt("Digite a idade da pessoa.");
+
+            if(idade == 0){
+                pulalinha();
+                document.write("Fim da pesquisa");
+                pulalinha();
+            }else {
+
+                sexo = prompt("Digite o sexo da pessoa usando M ou F.");
+                salario = parseFloat(prompt("Digite o salário da pessoa."));
+
+                
+
+                galera++;
+                pib = parseFloat(pib + salario);
+                
+                if (sexo == "F" || sexo == "f"){
+                    contMulher++;
+                }
+
+                if(pobre == 0){
+                    pobre = salario;
+                }else if(pobre > salario){
+                    pobre = salario;
+                    pobreidade = idade;
+                    pobresexo = sexo;
+                }
+
+
+                if(velho == 0){
+                    velho = idade;
+                }else if(velho < idade){
+                        velho = idade;
+                    }
+
+
+                if(nenem == 0){
+                    nenem = idade;
+                }else if(nenem > idade){
+                    nenem = idade;
+                }
+
+                
+            
+            }
+            
+        }
+
+        
+
+    
+        mediasal = parseFloat(pib / galera);
+
+
+        pulalinha();
+        document.write("A média salarial é: ", mediasal.toFixed(2));
+        pulalinha();
+        document.write("A maior idade é: " , velho , " e a menor idade é: " , nenem);
+        pulalinha();
+        document.write("Quantidade de mulheres: ", contMulher);
+        pulalinha();
+        document.write("Dados da pessoa com menor salário. \n Sexo: " , pobresexo ,  "\n Idade:" , pobreidade , "\n Menor salário: " , pobre);
+        pulalinha();
+        //document.write("galera ", galera);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci</title>
+
+    <script>
+        var num = prompt("digite um número");
+        var soma = 0
+        var anterior = 0
+        var prox = 1
+        
+        for (var i = 0; i < num; i++){
+            soma = anterior + prox
+            anterior = prox
+            prox = soma
+        }
+        document.write(soma)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
